@@ -1,0 +1,19 @@
+{
+  "name": "dharani.r",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pendlidharani/DHARANI.R.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pendlidharani/DHARANI.R/issues"
+  },
+  "homepage": "https://github.com/pendlidharani/DHARANI.R#readme"
+}
