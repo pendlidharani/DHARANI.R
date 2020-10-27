@@ -1,16 +1,14 @@
-t express = require('express'); // Load express framework
-const app = express();              // Initialize express app
+const http = require('http');
 
-const DEFAULT_PORT = 3000; 
+const hostname = '127.0.0.1';
+const port = 3000;
 
-// Define behavior for the server when it receives a request with this URL
- app.get('/', function (req, res) {
-   res.send('Hello World!');
-   });
-//
-//   // Start server by listening to designated port and responding to all requests
-   const server = app.listen(process.env.PORT || DEFAULT_PORT, function () {
-//     // Log a message to indicate that the server was started correctly
-       const port = server.address().port;
-         console.log(`Server listening on port ${port}!`);
-         });
+const server = http.createServer((req, res) => {
+	  res.statusCode = 200;
+	  res.setHeader('Content-Type', 'text/plain');
+	  res.end('Hello World');
+});
+
+server.listen(port, hostname, () => {
+	  console.log(`Server running at http://${hostname}:${port}/`);
+});
